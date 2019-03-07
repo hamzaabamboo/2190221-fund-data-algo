@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="midterm_practice">
+    <output-path>$PROJECT_DIR$/out/artifacts/midterm_practice</output-path>
+    <root id="archive" name="midterm_practice.jar">
+      <element id="module-source" name="midterm_prac" />
+      <element id="module-output" name="midterm_prac" />
+    </root>
+  </artifact>
+</component>
