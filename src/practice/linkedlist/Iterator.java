@@ -1,4 +1,4 @@
-package bst;
+package practice.linkedlist;
 
 public interface Iterator<T> {
 
@@ -15,5 +15,6 @@ public interface Iterator<T> {
     // then move the iterator back one position.
 
     public void set(T value);
+
 
 }

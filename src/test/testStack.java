@@ -1,7 +1,7 @@
 package test;
 
 import org.junit.Test;
-import stack.TestStack;
+import practice.stack.TestStack;
 
 import java.util.Stack;
 
@@ -40,28 +40,6 @@ public class testStack {
         assertEquals((Integer) 5, stack.s.pop());
         assertEquals((Integer) 4, stack.s.pop());
         assertEquals((Integer) 3, stack.s.pop());
-        assertEquals((Integer) 1, stack.s.pop());
-    }
-
-    @Test
-    public void testStackInsertAtBottom() throws Exception {
-        TestStack<Integer> stack = new TestStack<Integer>();
-        stack.s = new Stack<>();
-        stack.s.push(1);
-        stack.s.push(4);
-        stack.s.push(3);
-        stack.s.push(5);
-        stack.s.push(6);
-
-        stack.insertAtBottom(10, 2);
-        stack.insertAtBottom(3, 9);
-
-        assertEquals((Integer) 2, stack.s.pop());
-        assertEquals((Integer) 6, stack.s.pop());
-        assertEquals((Integer) 5, stack.s.pop());
-        assertEquals((Integer) 9, stack.s.pop());
-        assertEquals((Integer) 3, stack.s.pop());
-        assertEquals((Integer) 4, stack.s.pop());
         assertEquals((Integer) 1, stack.s.pop());
     }
 }

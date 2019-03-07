@@ -1,8 +1,8 @@
 package test;
 
-import linkedlist.CDLinkedList;
-import linkedlist.DListIterator;
 import org.junit.Test;
+import practice.linkedlist.CDLinkedList;
+import practice.linkedlist.DListIterator;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -68,14 +68,4 @@ public class testLinkedList {
         assertTrue(!cd.isInFront(7, 6));
     }
 
-    @Test
-    public void testCDLinkedListSortOLogN() throws Exception {
-        CDLinkedList<Integer> cd = genList();
-
-        CDLinkedList<Integer> sorted = CDLinkedList.sortONLogN(cd);
-        assertEquals((Integer) 3, sorted.header.nextNode.data);
-        assertEquals((Integer) 4, sorted.header.nextNode.nextNode.data);
-        assertEquals((Integer) 6, sorted.header.nextNode.nextNode.nextNode.data);
-        assertEquals((Integer) 7, sorted.header.nextNode.nextNode.nextNode.nextNode.data);
-    }
 }

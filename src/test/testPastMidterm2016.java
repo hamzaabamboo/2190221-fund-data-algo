@@ -1,19 +1,19 @@
 package test;
 
-import bst.BST;
-import bst.BSTNode;
-import linkedlist.CDLinkedList;
-import linkedlist.DListIterator;
 import org.junit.Test;
-import queue.TestQueue;
-import stack.TestStack;
+import practice.bst.BST;
+import practice.bst.BSTNode;
+import practice.linkedlist.CDLinkedList;
+import practice.linkedlist.DListIterator;
+import practice.queue.TestQueue;
+import practice.stack.TestStack;
 
 import java.util.ArrayDeque;
 import java.util.Stack;
 
 import static org.junit.Assert.*;
 
-public class testQ2 {
+public class testPastMidterm2016 {
 
     @Test
     public void testBSTfix() throws Exception {

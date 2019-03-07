@@ -1,4 +1,4 @@
-package linkedlist;
+package practice.linkedlist;
 
 public class DListNode<T> {
     // Constructors

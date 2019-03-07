@@ -1,4 +1,4 @@
-package bst;
+package practice.bst;
 
 public class BST<T extends Comparable> {
     public BSTNode<T> root;

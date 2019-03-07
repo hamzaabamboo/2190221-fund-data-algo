@@ -1,8 +1,10 @@
-package bst;
+package lab.lab_5;
 
-public class TreeIterator<T> implements Iterator<T> {
+import java.util.NoSuchElementException;
 
-    BSTNode<T> currentNode;
+public class TreeIterator implements Iterator {
+
+    BSTNode currentNode;
 
     public TreeIterator(BSTNode currentNode) {
         this.currentNode = currentNode;
@@ -50,7 +52,7 @@ public class TreeIterator<T> implements Iterator<T> {
     }
 
     @Override
-    public T next() throws Exception {
+    public int next() throws Exception {
         // Throw exception if the next data
         // does not exist.
         BSTNode temp = currentNode;
@@ -70,17 +72,17 @@ public class TreeIterator<T> implements Iterator<T> {
         }
 
         if (temp == null) // hasNext() == false
-            throw new Exception();
+            throw new NoSuchElementException();
         currentNode = temp;
         return currentNode.data;
     }
 
     @Override
-    public T previous() throws Exception {
+    public int previous() throws Exception {
         // Throw exception if the previous data
         // does not exist.
-        BSTNode<T> temp = currentNode;
-        T d = currentNode.data;
+        BSTNode temp = currentNode;
+        int d = currentNode.data;
 
         if (temp.left != null) {
             temp = temp.left;
@@ -97,14 +99,14 @@ public class TreeIterator<T> implements Iterator<T> {
         }
 
         if (temp == null) // hasPrevious() == false
-            throw new Exception();
+            throw new NoSuchElementException();
         currentNode = temp;
         return d;
 
     }
 
     @Override
-    public void set(T value) {
+    public void set(int value) {
         currentNode.data = value;
     }
 

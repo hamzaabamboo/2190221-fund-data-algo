@@ -1,8 +1,8 @@
 package test;
 
-import bst.BST;
-import bst.BSTNode;
 import org.junit.Test;
+import practice.bst.BST;
+import practice.bst.BSTNode;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package bst;
+package practice.bst;
 
 public class BSTNode<T> {
 
