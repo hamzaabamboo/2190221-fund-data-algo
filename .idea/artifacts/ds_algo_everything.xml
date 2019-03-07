@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ds_algo_everything">
+    <output-path>$PROJECT_DIR$/out/artifacts/ds_algo_everything</output-path>
+    <root id="archive" name="ds_algo_everything.jar">
+      <element id="module-source" name="midterm_prac" />
+      <element id="module-output" name="midterm_prac" />
+    </root>
+  </artifact>
+</component>

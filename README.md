@@ -13,7 +13,7 @@ Implementations of the data will probably be different between **lab** and **pra
 
 Also, I used **lots** of generics in my practice mainly to make it more flexible ( and cool ). So you'll have to adapt to it if you wanna copy something from here.
 
-Best open with IntelliJ IDE
+Best open with IntelliJ IDEA
 
 ## Stuff
 
