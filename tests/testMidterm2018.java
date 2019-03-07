@@ -59,7 +59,7 @@ public class testMidterm2018 {
 
     @Test
     public void testCDLinkedListSortOLogN() throws Exception {
-        CDLinkedList<Integer> cd = testLinkedList.genList();
+        CDLinkedList<Integer> cd = testCDLinkedList.genList();
 
         CDLinkedList<Integer> sorted = CDLinkedList.sortONLogN(cd);
         assertEquals((Integer) 3, sorted.header.nextNode.data);

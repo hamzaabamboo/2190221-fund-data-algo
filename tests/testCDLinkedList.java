@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class testLinkedList {
+public class testCDLinkedList {
 
     public static CDLinkedList<Integer> genList() throws Exception {
         CDLinkedList<Integer> cd = new CDLinkedList<>();
