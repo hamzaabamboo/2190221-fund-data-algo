@@ -9,24 +9,6 @@ import static org.junit.Assert.assertEquals;
 
 public class testStack {
     @Test
-    public void testStackOddNumbers() throws Exception {
-        TestStack<Integer> stack = new TestStack<Integer>();
-        stack.s = new Stack<>();
-        stack.s.push(1);
-        stack.s.push(4);
-        stack.s.push(3);
-        stack.s.push(5);
-        stack.s.push(6);
-        stack.removeMin();
-        assertEquals(4, stack.s.size());
-        assertEquals((Integer) 6, stack.s.pop());
-        assertEquals((Integer) 5, stack.s.pop());
-        assertEquals((Integer) 3, stack.s.pop());
-        assertEquals((Integer) 4, stack.s.pop());
-
-    }
-
-    @Test
     public void testStackPutIn() throws Exception {
         TestStack<Integer> stack = new TestStack<Integer>();
         stack.s = new Stack<>();

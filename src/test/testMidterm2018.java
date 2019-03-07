@@ -11,7 +11,7 @@ import java.util.Stack;
 import static org.junit.Assert.assertEquals;
 
 // The other two questions asks about Implementing Stack with Queue, Implementing BST that has Duplicates, and Implement removeAt
-public class testMidterm2019 {
+public class testMidterm2018 {
     @Test
     public void testQueueCombine() { // Midterm Q3
         ArrayDeque<Integer> queue = testQueue.genQueue();

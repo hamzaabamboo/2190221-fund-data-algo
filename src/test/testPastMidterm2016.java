@@ -30,23 +30,6 @@ public class testPastMidterm2016 {
     }
 
     @Test
-    public void testCloneTree() throws Exception {
-        BSTNode root = new BSTNode<>(3);
-        BST<Integer> tree = new BST<Integer>(root, 10);
-        tree.insert(1);
-        tree.insert(2);
-        tree.insert(4);
-        tree.insert(5);
-
-        BST<Integer> c = tree.cloneTree();
-        assertEquals((Integer) 3, c.root.data);
-        assertEquals((Integer) 5, c.root.right.right.data);
-        assertEquals((Integer) 1, c.root.left.data);
-        assertEquals((Integer) 2, c.root.left.right.data);
-        assertEquals((Integer) 4, c.root.right.data);
-    }
-
-    @Test
     public void testStackOddNumbers() throws Exception {
         TestStack<Integer> stack = new TestStack<Integer>();
         stack.s = new Stack<>();
@@ -61,7 +44,6 @@ public class testPastMidterm2016 {
         assertEquals(1, res.pop());
         assertEquals(3, res.pop());
         assertEquals(5, res.pop());
-
     }
 
     private static <T extends Comparable> boolean isBST(BSTNode<T> node) {
