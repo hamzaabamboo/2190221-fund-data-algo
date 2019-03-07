@@ -1,12 +1,9 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="ds_algo_everything">
+  <artifact type="jar" name="practices">
     <output-path>$PROJECT_DIR$/out/jars/</output-path>
-    <root id="archive" name="ds_algo_everything.jar">
+    <root id="archive" name="practices.jar">
+      <element id="module-output" name="ds_algo" />
       <element id="module-source" name="ds_algo" />
-      <element id="module-source" name="lab_01" />
-      <element id="module-source" name="lab_03" />
-      <element id="module-source" name="lab_04" />
-      <element id="module-source" name="lab_05" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
