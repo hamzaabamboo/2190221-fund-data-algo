@@ -219,7 +219,8 @@ public class BSTRecursive {
      * @return number of leaves in the subtree
      */
     private int numLeaves(BSTNode n) {
-        if (n.left == null || n.right == null) return 1;
+        if (n == null) return 0;
+        if (n.left == null && n.right == null) return 1;
         return numLeaves(n.left) + numLeaves(n.right);
     }
 
