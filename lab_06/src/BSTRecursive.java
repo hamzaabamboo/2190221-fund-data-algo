@@ -65,8 +65,7 @@ public class BSTRecursive {
     }
 
     public BSTNode insert(int v) {
-        root = insert(v, root, null);
-        return root;
+        return insert(v, root, null);
     }
 
     // return the node n after v was added into the tree
@@ -239,7 +238,7 @@ public class BSTRecursive {
     private BSTRecursive greaterThan(BSTNode n, int v, BSTRecursive result) {
         if (n == null) return result;
         if (n.data > v) {
-            result.insert(n.data);
+            result.root = result.insert(n.data);
         }
         greaterThan(n.left, v, result);
         greaterThan(n.right, v, result);
