@@ -26,6 +26,21 @@ public class CDLinkedList<T extends Comparable<T>> {
         header.previousNode = header;
     }
 
+    public void quickSort(DListNode<T> start, DListNode<T> end) {
+        if (start == end) return;
+        DListNode<T> mid = partition(start, end);
+        quickSort(start, mid.previousNode);
+        quickSort(mid.nextNode, end);
+    }
+
+    public boolean isBefore(DListNode<T> start, DListNode<T> end) {
+        return false;
+    }
+
+    public DListNode<T> partition(DListNode<T> start, DListNode<T> end) {
+        return null;
+    }
+
     // put in new data after the position of p.
     public void insert(T data, Iterator p) throws Exception {
         if (p == null || !(p instanceof DListIterator))

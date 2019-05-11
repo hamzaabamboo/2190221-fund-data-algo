@@ -86,7 +86,11 @@ public class BST<T extends Comparable> {
     }
 
     public BSTNode<T> createMirror() {
-        return createMirror(root, null);
+        return createMirror(root);
+    }
+
+    public BSTNode<T> createMirror(BSTNode<T> n) {
+        return createMirror(n, null);
     }
 
     public BSTNode<T> createMirror(BSTNode<T> n, BSTNode<T> parent) {
